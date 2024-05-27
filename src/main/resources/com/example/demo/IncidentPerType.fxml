@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <children>
+      <BarChart fx:id="incidentPerTypeBarChart" prefHeight="400.0" prefWidth="724.0" title="Acidentes por Tipo - Incidents Per Type">
+        <xAxis>
+          <CategoryAxis label="Tipo de Acidente" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Acidentes" side="LEFT" />
+        </yAxis>
+         <VBox.margin>
+            <Insets right="20.0" />
+         </VBox.margin>
+      </BarChart>
+   </children>
+</VBox>

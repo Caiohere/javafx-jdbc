@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="About">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" left="20.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <Label prefHeight="220.0" prefWidth="541.0" text="Esse aplicativo foi desenvolvido em um projeto de faculdade, e nos&#10;ajudou a aprender mais sobre o Java&#10;Aqui você consegue Analisar dados sobre Segurança do Trabalho de uma empresa&#10;e criar Insights para tornar o ambiente de trabalho melhor&#10;Nosso grupo é composto por eu, Caio Santos e meus colegas:&#10;-Nicolas Mendes&#10;-Rafael Ribak&#10;-Carlos Bispo&#10;-Gustavo Kusdra&#10;&#10;Você pode encontrar detalhes sobre o código no repositório GitHub&#10;&#10;&#10;&#10;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="30.0" />
+         </VBox.margin>
+      </Label>
+      <Hyperlink prefHeight="19.0" prefWidth="413.0" text="github.com/Caiohere/javafx-jdbc">
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</VBox>

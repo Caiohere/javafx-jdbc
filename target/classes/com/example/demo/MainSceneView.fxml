@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.VBox?>
-
+<?import javafx.scene.text.Font?>
 
 <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
    <content>
@@ -13,19 +15,43 @@
          <children>
             <MenuBar prefHeight="26.0" prefWidth="525.0">
               <menus>
-                <Menu mnemonicParsing="false" text="Registration">
+                  <Menu mnemonicParsing="false" onAction="#onMenuHome" text="Home">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onMenuHome" text="Home Page" />
+                     </items></Menu>
+                <Menu mnemonicParsing="false" text="Gráficos">
                   <items>
-                    <MenuItem fx:id="menuItemSeller" mnemonicParsing="false" onAction="#onMenuItemSellerAction" text="Seller" />
-                        <MenuItem fx:id="menuItemDepartment" mnemonicParsing="false" onAction="#onMenuItemDepartmentAction" text="Department" />
+                    <MenuItem fx:id="menuItemIncidentPerType" mnemonicParsing="false" onAction="#onMenuItemIncidentType" text="Acidente Por Tipo" />
+                        <MenuItem fx:id="menuItemIncidentPerGravity" mnemonicParsing="false" onAction="#onMenuItemIncidentPerGravity" text="Acidente Por Gravidade" />
+                        <MenuItem fx:id="menuItemInspectionPerType" mnemonicParsing="false" onAction="#onMenuItemInspectionPerType" text="Inspeção Por Área" />
+                        <MenuItem fx:id="menuItemTrainingFrequency" mnemonicParsing="false" onAction="#onMenuTrainingFrequency" text="Frequência de Treinamentos por Área" />
+                        <MenuItem fx:id="IncidentTendencyPerMonth" mnemonicParsing="false" onAction="#onMenuIncidentTendencyPerMonth" text="Tendência de Acidente" />
                   </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Help">
                   <items>
-                    <MenuItem fx:id="menuItemAbout" mnemonicParsing="false" onAction="#onMenuItemAboutAction" text="About" />
+                    <MenuItem fx:id="menuItemAbout" mnemonicParsing="false" onAction="#onMenuItemAboutAction" text="About - EN" />
+                        <MenuItem mnemonicParsing="false" onAction="#onMenuItemAboutAction2" text="About  - PT-br" />
                   </items>
                 </Menu>
               </menus>
             </MenuBar>
+            <Label text="Chart System">
+               <VBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label prefHeight="223.0" prefWidth="373.0" text="Welcome to our java application! I hope you enjoy it.&#10;Use the Menu Bar to switch between the Charts&#10;More information on the &quot;Help&quot; window.&#10;&#10;Bem vindo à nossa aplicação java! Espero que goste.&#10;Use a barra de menu para alternar entre os gráficos&#10;Mais informações na tela &quot;Help&quot;&#10;&#10; ">
+               <VBox.margin>
+                  <Insets left="50.0" top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
          </children>
       </VBox>
    </content>

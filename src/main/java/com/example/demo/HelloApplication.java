@@ -7,8 +7,11 @@ import javafx.scene.control.ScrollPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.*;
+import java.util.ArrayList;
 
 public class HelloApplication extends Application {
+
 
     private static Scene mainScene;
 
@@ -21,15 +24,20 @@ public class HelloApplication extends Application {
         scrollPane.setFitToWidth(true);
 
         mainScene = new Scene(scrollPane);
-        stage.setTitle("Java Aplication");
+        stage.setTitle("App Insights");
         stage.setScene(mainScene);
         stage.show();
     }
+
+
+
+
     public static Scene getMainScene() {
         return mainScene;
     }
 
-    public static void main(String[] args) {
-        launch();
+    public static void main(String[] args) throws SQLException {
+       launch();
     }
+
 }

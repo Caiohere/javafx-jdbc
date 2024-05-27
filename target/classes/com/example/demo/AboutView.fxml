@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="307.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -13,16 +13,24 @@
             <Insets bottom="10.0" left="20.0" top="10.0" />
          </VBox.margin>
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="System Bold" size="26.0" />
          </font>
       </Label>
-      <Label prefHeight="18.0" prefWidth="288.0" text="JavaFX Aplication Demo">
+      <Label prefHeight="223.0" prefWidth="534.0" text="This app was developed as a college project, and helped&#10;us to learn about Java.&#10;Here you can Analyse a company data about workplace safety&#10;and create Insights to make the workspace better.&#10;Our crew is composed by me, Caio Santos and my colleagues:&#10;-Nicolas Mendes&#10;-Rafael Ribak&#10;-Carlos Bispo&#10;-Gustavo Kusdra&#10;&#10;You can also find details about the code on GitHub Repository&#10;&#10;&#10;&#10;">
          <VBox.margin>
-            <Insets left="20.0" />
+            <Insets left="30.0" />
          </VBox.margin>
          <font>
             <Font size="14.0" />
          </font>
       </Label>
+      <Hyperlink prefHeight="19.0" prefWidth="413.0" text="github.com/Caiohere/javafx-jdbc">
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Hyperlink>
    </children>
 </VBox>
